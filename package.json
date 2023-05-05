@@ -1,0 +1,58 @@
+{
+  "name": "LMS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "server": "nodemon server.js --ignore client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@blueprintjs/core": "^4.16.3",
+    "@blueprintjs/datetime": "^4.4.18",
+    "@syncfusion/ej2-react-calendars": "^20.4.48",
+    "axios": "^1.3.6",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^5.2.3",
+    "bootstrap-vue": "^2.23.1",
+    "cloudinary": "^1.25.1",
+    "concurrently": "^6.0.2",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.7",
+    "dotenv": "^9.0.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.4.0",
+    "express-validator": "^6.10.1",
+    "file-upload": "^0.0.0",
+    "form-data": "^4.0.0",
+    "fs": "^0.0.1-security",
+    "fuzzball": "^2.1.2",
+    "http-proxy-middleware": "^2.0.6",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.4",
+    "mongoose": "^5.12.7",
+    "multer": "^1.4.2",
+    "node-fetch": "^3.3.1",
+    "prod": "^1.0.1",
+    "react-alert": "^7.0.3",
+    "react-bootstrap": "^2.7.2",
+    "react-bootstrap-datetimepicker": "^0.0.22",
+    "react-datetime-bootstrap": "^1.4.7",
+    "vue": "^2.7.14"
+  },
+  "proxy": {
+    "/auth/register": {
+      "target": "localhost:5000"
+    },
+    "/enroll-course": {
+      "target": "localhost:5000"
+    },
+    "/get-courses": {
+      "target": "localhost:5000"
+    }
+  }
+}
